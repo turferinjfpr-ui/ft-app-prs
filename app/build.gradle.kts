@@ -12,11 +12,11 @@ val keystoreProps = Properties().apply {
 }
 
 android {
-    namespace = "app.ft.unyx"
+    namespace = "app.ft"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "app.ft.unyx"
+        applicationId = "app.ft"
         minSdk = 29
         targetSdk = 36
         versionCode = 115
