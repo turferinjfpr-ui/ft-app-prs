@@ -372,9 +372,10 @@ private val SIZE_CHOICES = listOf(
     VideoPlans.SIZE_CUSTOM to R.string.picture_size_custom
 )
 
-private val FPS_CHOICES = listOf(0 to "", 15 to "15", 20 to "20", 24 to "24", 30 to "30")
+private val FPS_CHOICES = listOf(0 to "", 15 to "15", 20 to "20", 24 to "24", 30 to "30", 60 to "60")
 
-private val RATE_CHOICES = listOf(2_000_000 to "2", 2_560_000 to "2.56", 3_000_000 to "3", 3_840_000 to "3.84", 5_000_000 to "5")
+private val RATE_CHOICES = listOf(2_000_000 to "2", 2_560_000 to "2.56", 3_000_000 to "3", 3_840_000 to "3.84", 5_000_000 to "5", 10_000_000 to "10", 15_000_000 to "15", 30_000_000 to "30" , 100_000_000 to "100")
+
 
 private val FLOOR_CHOICES = listOf(0 to "", 18 to "18", 22 to "22", 26 to "26")
 
