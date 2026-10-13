@@ -119,6 +119,15 @@ object VideoPlans {
                     out["video-qp-p-min"] = 22
                     out["vendor.qti-ext-enc-low-latency.enable"] = 1
                 }
+                "SM8250" -> {
+                    out["bitrate-mode"] = 2
+                    out["priority"] = 0
+                   out["vendor.qti-ext-enc-low-latency.enable"] = 1
+                    if (sdk >= 31) {
+                        out["video-qp-p-max"] = 26
+                        out["video-qp-i-min"] = 10
+                        out["video-qp-p-min"] = 10
+                    }
                 "SDM870", "SM8350", "SM8450", "SM8475", "SM8550" -> Unit
                 else -> {
                     if (sdk >= 31) out["video-qp-p-max"] = 40
