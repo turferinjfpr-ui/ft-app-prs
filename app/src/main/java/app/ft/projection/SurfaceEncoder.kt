@@ -24,7 +24,7 @@ class SurfaceEncoder(
 ) {
     private val tag = "Encoder"
     private val fps = fps.coerceIn(1, 60)
-    private val bitrate = bitrate.coerceIn(300_000, 100_000_000)
+    private val bitrate = bitrate.coerceIn(5_000_000, 100_000_000)
     private val running = AtomicBoolean(false)
     private var thread: HandlerThread? = null
     private var handler: Handler? = null
